@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="cortena"
+          fetch="https://github.com/cortena"
+          revision="avalon"
+          sync-c="true"
+          sync-j="4" />
+
+</manifest>
