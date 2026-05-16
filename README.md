@@ -28,7 +28,7 @@ Before building **CortenaOS**, make sure your environment includes:
 
 ```bash
 # Initialize the repository
-repo init --git-lfs -u https://github.com/cortena/manifest -b avalon
+repo init -u https://github.com/cortenaos/manifest.git -b avalon
 
 # Sync sources
 repo sync -c -j$(nproc --all)
