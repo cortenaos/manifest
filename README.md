@@ -17,16 +17,26 @@ Before building **CortenaOS**, make sure your environment includes:
 - A 64-bit x86 system
 - At least 400 GB of free disk space
 - A Linux distribution with glibc 2.17 or later
-- Required software:
-  - `Git`
-  - `Repo`
-  - `OpenJDK`
-  - `Python 3`
-  - `Make`
 
 ## Getting Started
 
 ```bash
+# Install required packages
+sudo apt-get install git-core gnupg flex bison build-essential zip curl zlib1g-dev libc6-dev-i386 x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
+
+# Install Repo
+sudo apt-get update
+sudo apt-get install repo
+repo version # Verify
+```
+
+## Repo Sync
+
+```bash
+# Create a directory for the repository
+mkdir -p cortena
+cd cortena
+
 # Initialize the repository
 repo init -u https://github.com/cortenaos/manifest.git -b avalon
 
@@ -34,14 +44,23 @@ repo init -u https://github.com/cortenaos/manifest.git -b avalon
 repo sync -c -j$(nproc --all)
 ```
 
+## Setup Compiler Cache (Optional but recommended)
+
+```bash
+sudo apt install ccache
+export USE_CCACHE=1
+export CCACHE_EXEC=/usr/bin/ccache
+ccache -M 50G # Set cache size to 50GB
+```
+
 ## Build
 
 ```bash
 # Set up the build environment
-. build/envsetup.sh
+source build/envsetup.sh
 
 # Choose a target
-lunch cortena_<device_codename>-bp4a-userdebug
+lunch cortena_<device_codename> bp4a userdebug
 
 # Start compilation
 m cortena -j$(nproc --all)
