@@ -47,10 +47,16 @@ repo sync -c -j$(nproc --all)
 ## Setup Compiler Cache (Optional but recommended)
 
 ```bash
+# Install ccache
 sudo apt install ccache
-export USE_CCACHE=1
-export CCACHE_EXEC=/usr/bin/ccache
-ccache -M 50G # Set cache size to 50GB
+echo "export USE_CCACHE=1" >> ~/.bashrc
+echo "export CCACHE_EXEC=$(which ccache)" >> ~/.bashrc
+
+# Source bash environment
+bash
+
+# Set cache size to 50GB
+ccache -M 50G
 ```
 
 ## Build

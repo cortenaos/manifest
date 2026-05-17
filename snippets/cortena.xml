@@ -30,6 +30,6 @@
   <project path="packages/apps/Launcher" name="packages_apps_Launcher" remote="cortenaos" groups="cortena,app,ui" />
 
   <!-- Vendor -->
-  <project path="vendor/common" name="vendor_common" remote="cortenaos" />
+  <project path="vendor/cortena" name="vendor_cortena" remote="cortenaos" />
 
 </manifest>
