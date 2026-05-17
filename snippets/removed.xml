@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+** SPDX-License-Identifier: GPL-3.0-or-later
+** Copyright (C) 2026-present The CortenaOS Project
+*/
+-->
 <manifest>
 
+  <!-- Remove -->
+  <remove-project path="device/generic/goldfish" />
+  <remove-project path="packages/apps/Launcher3" />
+  
 </manifest>

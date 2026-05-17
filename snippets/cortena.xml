@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+** SPDX-License-Identifier: GPL-3.0-or-later
+** Copyright (C) 2026-present The CortenaOS Project
+*/
+-->
 <manifest>
 
-  <remote name="cortena"
-          fetch="https://github.com/cortena"
+  <remote name="cortenaos"
+          fetch="https://github.com/cortenaos"
           revision="avalon"
           sync-c="true"
           sync-j="4" />
+
+  <remote name="cortenaos-devices"
+          fetch="https://github.com/cortenaos-devices"
+          revision="avalon"
+          sync-c="true"
+          sync-j="4" />
+
+  <!-- Devices  -->
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="cortenaos-devices" groups="pdk" />
+
+  <!-- Frameworks  -->
+  <project path="frameworks/cortenaui" name="frameworks_cortenaui" remote="cortenaos" groups="cortena,framework,ui" />
+
+  <!-- Packages  -->
+  <project path="packages/apps/Capsule" name="packages_apps_Capsule" remote="cortenaos" groups="cortena,app,ui" />
+  <project path="packages/apps/Launcher" name="packages_apps_Launcher" remote="cortenaos" groups="cortena,app,ui" />
+
+  <!-- Vendor -->
+  <project path="vendor/common" name="vendor_common" remote="cortenaos" />
 
 </manifest>
