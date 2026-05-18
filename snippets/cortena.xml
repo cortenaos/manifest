@@ -22,13 +22,6 @@
   <!-- Devices  -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="cortenaos-devices" groups="pdk" />
 
-  <!-- Frameworks  -->
-  <project path="frameworks/cortenaui" name="frameworks_cortenaui" remote="cortenaos" groups="cortena,framework,ui" />
-
-  <!-- Packages  -->
-  <project path="packages/apps/Capsule" name="packages_apps_Capsule" remote="cortenaos" groups="cortena,app,ui" />
-  <project path="packages/apps/Launcher" name="packages_apps_Launcher" remote="cortenaos" groups="cortena,app,ui" />
-
   <!-- Vendor -->
   <project path="vendor/cortena" name="vendor_cortena" remote="cortenaos" />
 

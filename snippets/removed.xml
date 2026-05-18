@@ -9,6 +9,5 @@
 
   <!-- Remove -->
   <remove-project path="device/generic/goldfish" />
-  <remove-project path="packages/apps/Launcher3" />
   
 </manifest>
