@@ -15,8 +15,8 @@ The project prioritizes fluidity, responsiveness, and cohesive system behavior o
 Before building **CortenaOS**, make sure your environment includes:
 
 - A 64-bit x86 system
-- At least 400 GB of free disk space
 - A Linux distribution with glibc 2.17 or later
+- At least 400 GB of free disk space
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ mkdir -p cortena
 cd cortena
 
 # Initialize the repository
-repo init -u https://github.com/cortenaos/manifest.git -b avalon
+repo init --partial-clone --no-use-superproject -b avalon -u https://github.com/cortenaos/manifest.git
 
 # Sync sources
 repo sync -c -j$(nproc --all)
