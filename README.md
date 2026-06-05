@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/dtptrqj5x/image/upload/v1777029971/banner_kjmi3r.webp" alt="CortenaOS" />
+  <img src="https://res.cloudinary.com/dtptrqj5x/image/upload/v1780522658/banner_g8s9j8.webp" alt="CortenaOS" />
 </p>
 
 ## Introduction
