@@ -19,8 +19,25 @@
           sync-c="true"
           sync-j="4" />
 
+  <!-- Bootable  -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="cortenaos" groups="pdk" />
+
   <!-- Devices  -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="cortenaos-devices" groups="pdk" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" remote="cortenaos" />
+
+  <!-- Packages -->
+  <project path="packages/apps/calculator" name="packages_apps_calculator" remote="cortenaos" />
+  <project path="packages/apps/capsule" name="packages_apps_capsule" remote="cortenaos" />
+  <project path="packages/apps/contacts" name="packages_apps_contacts" remote="cortenaos" groups="pdk-fs" />
+  <project path="packages/apps/contacts-picker" name="packages-_apps_contactspicker" remote="cortenaos" groups="pdk-fs" />
+  <project path="packages/apps/gallery" name="packages_apps_gallery" remote="cortenaos" groups="pdk-fs" />
+  <project path="packages/apps/glyph" name="packages_apps_glyph" remote="cortenaos" />
+  <project path="packages/apps/launcher" name="packages_apps_launcher" remote="cortenaos" groups="pdk-fs,sysui-studio,pdk-cw-tvc" />
+  <project path="packages/apps/recorder" name="packages_apps_recorder" remote="cortenaos" />
+  <project path="packages/apps/settings" name="packages_apps_settings" remote="cortenaos" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
 
   <!-- Vendor -->
   <project path="vendor/cortena" name="vendor_cortena" remote="cortenaos" />

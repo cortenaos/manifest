@@ -7,7 +7,22 @@
 -->
 <manifest>
 
-  <!-- Remove -->
+  <!-- Removed Bootable -->
+  <remove-project path="bootable/recovery" />
+
+  <!-- Removed Devices -->
   <remove-project path="device/generic/goldfish" />
+
+  <!-- Removed Frameworks -->
+  <remove-project path="frameworks/base" />
+  
+  <!-- Removed Packages -->
+  <remove-project path="packages/apps/Contacts" />
+  <remove-project path="packages/apps/ContactsPicker" />
+  <remove-project path="packages/apps/Gallery" />
+  <remove-project path="packages/apps/Gallery2" />
+  <remove-project path="packages/apps/Launcher3" />
+  <remove-project path="packages/apps/Music" />
+  <remove-project path="packages/apps/Settings" />
   
 </manifest>
