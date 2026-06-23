@@ -38,7 +38,7 @@ mkdir -p cortena
 cd cortena
 
 # Initialize the repository
-repo init --partial-clone --no-use-superproject -b avalon -u https://github.com/cortenaos/manifest.git
+repo init --partial-clone --no-use-superproject --git-lfs -b avalon -u https://github.com/cortenaos/manifest.git
 
 # Sync sources
 repo sync -c -j$(nproc --all)
@@ -76,5 +76,5 @@ m cortena -j$(nproc --all)
 
 ```text
 Current release: CortenaOS 1.0 "Avalon"
-Based on Android 16 QPR2
+Based on Android 17 Release
 ```
